@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Registeration Form</h1>
+        <div class="in">
+            <label for="" style="margin-right: 44px;">Name</label>
+            <input type="text" placeholder="Enter Your Name" style="width: 80%; padding-left: 4px;"><br>
+            <br><label for="" style="margin-right: 50px;">Email</label>
+            <input type="email" placeholder="Enter Your Email" style="width: 80%; padding-left: 4px;"><br>
+            <br><label for="" style="margin-right: 19px;">Password</label>
+            <input type="password" placeholder="Enter Your Password" style="width: 80%; padding-left: 4px;"><br>
+            <br><label for="" style="margin-right: 13px;">Phone No</label>
+            <input type="tel" placeholder="Enter Your Mobile No" style="width: 80%; padding-left: 4px;"><br>
+            <br><label for="">Gender</label><br>
+            <input type="radio" name="gen">
+            <label>Male</label>
+            <input type="radio" name="gen">
+            <label>Female</label>
+            <input type="radio" name="gen">
+            <label>Others</label><br>
+            <br><label for="">Description</label><br>
+            <textarea name="Description" id="" placeholder="Enter About Yourself" style="height: 100px; width: 543px;"></textarea><br>
+            <br><input type="checkbox">
+            <label for="">I Agree Terms and Condition</label><br><br>
+            <button>submit</button>
+        </div>
+    </div>
+    <h1 id="heading">Making Table</h1>
+    <table border="1" width="500px" height="300px" align="center" >
+        <tr>
+            <th rowspan="3" >
+                Day
+            </th>
+
+            <th colspan="3">
+                Seminar
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTDD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m</td>
+            <td>2:00 p.m</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+            <td>XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XSL Formating Objects</td>
+        </tr>
+    </table>
+</body>
+</html>
