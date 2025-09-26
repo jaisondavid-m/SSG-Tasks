@@ -5,7 +5,7 @@ function vote_fntcn(){
         alert("🕺Vanakam da "+name+" ,You are eligible to Vote");
     }
     else{
-        alert("😞Sorry da nanba "+"name"+"👶"+" ,You are not eligible to Vote🔞");
+        alert("😞Sorry da nanba "+name+"👶"+" ,You are not eligible to Vote🔞");
     }
 }
 
