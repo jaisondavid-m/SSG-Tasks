@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Personal Dashboard</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<h1>🎓 Student Personal Dashboard</h1>
+
+<div class="container">
+
+  <!-- Profile Section -->
+  <div class="card">
+    <h2>Profile</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="birthYear" placeholder="Enter Birth Year">
+    <input type="text" id="city" placeholder="Enter City">
+    <button onclick="saveProfile()">Save Profile</button>
+    <div id="profileOutput"></div>
+  </div>
+
+  <!-- Age Checker -->
+  <div class="card">
+    <h2>Age Checker</h2>
+    <button onclick="checkAge()">Check Age & Eligibility</button>
+    <div id="ageOutput"></div>
+  </div>
+
+  <!-- Greeting Section -->
+  <div class="card">
+    <h2>Greeting</h2>
+    <button onclick="greetUser()">Get Greeting</button>
+    <div id="greetingOutput"></div>
+  </div>
+
+  <!-- Calculator Section -->
+  <div class="card">
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter Number 1">
+    <input type="number" id="num2" placeholder="Enter Number 2">
+    <select id="operation">
+      <option value="add">Addition (+)</option>
+      <option value="subtract">Subtraction (-)</option>
+      <option value="multiply">Multiplication (×)</option>
+      <option value="divide">Division (÷)</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <div id="calcOutput"></div>
+  </div>
+
+  <!-- Quotes Section -->
+  <div class="card">
+    <h2>Motivational Quote</h2>
+    <button onclick="showQuote()">Show Quote</button>
+    <div id="quoteOutput"></div>
+  </div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>

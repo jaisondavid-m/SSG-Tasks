@@ -7,13 +7,14 @@ function vote_fntcn(){
     else{
         alert("😞Sorry da nanba "+name+"👶"+" ,You are not eligible to Vote🔞");
     }
+    let result = confirm("Do You Want Re-Enter the Age Correctly ⁉️");
+    if (result){
+       vote_fntcn();
+    }
+    else{
+        alert("Good Bye👋🙂")
+    }
 }
 
 vote_fntcn();
-let result = confirm("Do You Want Re-Enter the Age Correctly ⁉️");
-if (result){
-    vote_fntcn();
-}
-else{
-    alert("Good Bye👋🙂")
-}
+
