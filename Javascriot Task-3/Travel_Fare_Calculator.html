@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Fare Calculator</title>
+    <body><h2>Reload this page to continue.</h2></body>
+    <script>
+       
+       
+        
+    //welcome message
+    if(confirm("Travel Fare Calculator "+"\n\n"+" Enter OK to continue.")){
+        //Distance
+        let dis = prompt("Enter the total distance (in km): ");
+        let distance = Number(dis);  //converting into number
+        if(distance>0){
+            //Choicce
+            let choice = prompt("Enter your choice\n\nBike/Train/Bus/Car/Aeroplane");
+            let option=choice.toUpperCase();  //converrting all input to uppercase to make error free
+            switch(option){
+            //if bike
+                case "BIKE":
+                {
+                    let bike_fare = 2;
+                    let total = distance*bike_fare;
+                    alert("Total Fare: " + total);
+                    break;
+                }
+            //if train
+                case "TRAIN":
+                {
+                    let train_fare = 4;
+                    let total = distance*train_fare;
+                    alert("Total Fare: " + total);
+                    break;
+                }
+            //if bus
+                case "BUS":
+                {
+                    let bus_fare = 5;
+                    let total = distance * bus_fare;
+                    alert("Total Fare: " + total);
+                    break;
+                }
+            //if car
+                case "CAR":
+                {
+                    let car_fare = 12;
+                    let total = distance*car_fare;
+                    alert("Total Fare: " + total);
+                    break;
+                }
+            //if aeroplane
+                case "AEROPLANE":
+                {
+                    let aero_fare = 50;
+                    let total = distance*aero_fare;
+                    alert("Total Fare: " + total);
+                    break;
+                }
+            //if no value given from above cases
+                default:
+                {
+                    alert("Invalid choice..");
+                    break;
+                }
+            }
+        }
+        //if distance is given in negative
+        else{
+            alert("Invalid input! Please try again.");
+        }
+    }
+    else{
+        alert("Thankyou");
+    }
+    
+    </script>
+</head>
+</html>

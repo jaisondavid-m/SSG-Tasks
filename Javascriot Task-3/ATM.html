@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM model</title>
+</head>
+<body><h1>Refresh The Page to Restart</h1></body>
+<script>                  
+    // Ask the user to enter PIN
+    let pin=prompt("Enter your PIN");
+
+    // Check if PIN is correct
+    if (pin=="0000"){
+        // Initial Bank Balance
+        let Balance=10000;
+
+        // Ask user what operation they want to perform
+        let category=prompt("Enter No \n1 to Withdraw\n2 to Deposit\n3 to Check Balance");
+
+        // Decide action based on user choice
+        switch(category){
+            case "1":
+                // Withdraw money
+                let amount=prompt("Enter Amount");
+                let new_bal=Balance-amount; // Update balance after withdrawal
+                alert("Your Bank Balance is Rs:" + new_bal); // Show new balance
+                alert("Thank You"); // Exit message
+                break;
+
+            case "2":
+                // Deposit money
+                alert("Place the Money in Appropriate Place");
+                break;
+
+            case "3":
+                // Show current balance
+                alert("Your Bank Balance is Rs:" + Balance);
+                alert("Thank You"); // Exit message
+                break;
+        }
+    }
+    else{
+        // If entered PIN is wrong
+        alert("Incorrect PIN !");
+    }
+</script>
+</html>

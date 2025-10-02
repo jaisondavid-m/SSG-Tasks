@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Site</title>
+</head>
+<body><h1>Refresh the page to start the Quiz</h1></body>
+<script>
+    // Welcome message
+    alert("Welcome to the Quiz Site !\nYou will be asked 5 questions about Java.\nEnter the correct option number (1, 2, or 3).\nLet's start!");
+
+    // Initialize score
+    let score = 0;
+
+    // Q1
+    let q1 = prompt("Q1: Who invented Java?\n1. James Gosling\n2. Dennis Ritchie\n3. Bjarne Stroustrup");
+    if(q1=="1"){
+        score++;
+    }
+
+    // Q2
+    let q2 = prompt("Q2: Which company developed Java?\n1. Sun Microsystems\n2. Microsoft\n3. Google");
+    if(q2=="1"){
+        score++;
+    }
+
+    // Q3
+    let q3 = prompt("Q3: What is the extension of Java source files?\n1. .class\n2. .java\n3. .js");
+    if(q3=="2"){
+        score++;
+    }
+
+    // Q4
+    let q4 = prompt("Q4: Which keyword is used to inherit a class in Java?\n1. extends\n2. implements\n3. inherit");
+    if(q4=="1"){
+        score++;
+    }
+
+    // Q5
+    let q5 = prompt("Q5: Which method is the entry point of a Java program?\n1. start()\n2. main()\n3. run()");
+    if(q5=="2"){
+        score++;
+    }
+
+    // Show Final Score
+    alert("✅ Your Final Score: " + score + "/5");
+
+    // Performance message
+    if(score === 5){
+        alert("🌟 Excellent!");
+    } else if(score >= 3){
+        alert("👍 Good job!");
+    } else {
+        alert("😅 Keep practicing!");
+    }
+</script>
+</html>

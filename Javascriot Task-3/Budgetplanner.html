@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Budget Planner</title>
+</head>
+<body><h1>Refresh the page to start again</h1></body>
+<script>
+    // reciving monthly income
+    let income = Number(prompt("Enter your Monthly Income:"));
+
+    // recieving expenses
+    let rent = Number(prompt("Enter Rent Expense:"));
+    let groceries = Number(prompt("Enter Groceries Expense:"));
+    let transport = Number(prompt("Enter Transport Expense:"));
+
+    // 3. Calculating total expenses
+    let totalExpenses = rent + groceries + transport;
+
+    // 4. Calculating remaining balance
+    let remaining = income - totalExpenses;
+
+    // 5. Calculating percentage spent
+    let percentageSpent = (totalExpenses / income) * 100;
+
+    // 6. Check overspending or within budget
+    let message;
+    if(totalExpenses > income){
+        message = "⚠️ Overspending!";
+    } else {
+        message = "✅ You are within budget.";
+    }
+
+    // 7. Display results
+    alert("Budget Report\n-------------------\n" +
+          "Total Expenses: " + totalExpenses + "\n" +
+          "Remaining Balance: " + remaining + "\n" +
+          "Percentage Spent: " + percentageSpent.toFixed(2) + "%\n" +
+          "Message: " + message);
+</script>
+</html>
