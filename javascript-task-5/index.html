@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Event Registration & Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card" id="registrationSection">
+    <h2>Event Registration</h2>
+    <label>Name:</label>
+    <input type="text" id="name">
+    <label>Email:</label>
+    <input type="email" id="email">
+    <label>Age:</label>
+    <input type="number" id="age">
+    <button onclick="registerUser()">Register</button>
+    <p id="regError" style="color:red;"></p>
+  </div>
+
+  <div class="card hidden" id="quizSection">
+    <h2>Mini Quiz</h2>
+    <form id="quizForm">
+      <!-- Questions will be injected dynamically -->
+    </form>
+    <button onclick="submitQuiz()">Submit Answers</button>
+    <p id="quizMsg" style="color:blue;"></p>
+  </div>
+
+  <div class="card hidden" id="resultSection">
+    <h2>Result Summary</h2>
+    <p id="resultOutput"></p>
+    <h3>Stored JSON Data:</h3>
+    <pre id="jsonOutput"></pre>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
